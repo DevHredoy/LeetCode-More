@@ -7,8 +7,6 @@ public class FibonacciNumber {
            //     sequence
 
         findFibonacchi(11);
-
-
     }
 
 static void findFibonacchi(int seq)
