@@ -12,8 +12,8 @@ public class CyclicSort {
         {
 
             if(index==array.length-1 && array[index]==index+1)
-            {break;}// I think the  problem lies in this line
-         else  if(index!=array[index]-1)// index 0 element 4
+            {break;}
+         else  if(index!=array[index]-1)
             {
                int temp=array[array[index]-1];
                array[array[index]-1]=array[index];
