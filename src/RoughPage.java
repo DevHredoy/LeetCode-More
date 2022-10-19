@@ -6,19 +6,22 @@ import java.util.Arrays;
 public class RoughPage{
 
 
+
+ static  int findFebonacciNumber(int nth)
+ {
+     if(nth<2)
+     {
+         return nth;
+     }
+
+     return findFebonacciNumber(nth-1)+findFebonacciNumber(nth-2);
+ }
+
     public static void main(String[] args) {
 
-     int[][] array=new int[][]{
-             {5,10,12,15},
-             {7,11,13,16},
-             {9,12,17,19},
-             {10,13,19,21,45,33},
-             {12,15,20,25}
 
-     };
+        System.out.println(findFebonacciNumber(7));
 
-     int rowLength=array[3].length;
-        System.out.println(rowLength);
-        System.out.println("helo");
+
 }
 }
