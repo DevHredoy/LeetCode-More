@@ -46,8 +46,8 @@ public class BinarySearchDemo {
     public static void main(String[] args) {
 
         int[] array=new int[]{2,4,12,16,18,21,23,27,30};
-        int upperbound=array.length-1;
-        binarySearchTarget(array,13,0,upperbound);
+
+        binarySearchTarget(array,20,0,array.length-1);
 
     }
 }
