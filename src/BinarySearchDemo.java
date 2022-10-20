@@ -2,8 +2,7 @@ public class BinarySearchDemo {
 
   public static  void binarySearchTarget(int[] arr,int target,int lowerBound,int upperBound)
 
-  {
-      //if there is no element matching between the upperbound and lowerbound that means
+  {//if there is no element matching between the upperbound and lowerbound that means
       //upperbound is the next value to the lower bound
       if(arr[lowerBound+1]==arr[upperBound])
             {
