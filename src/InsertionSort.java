@@ -1,46 +1,59 @@
 public class InsertionSort {
 
-    // In insertion sort the sorting happens in the prior part of the array
-    //we shall create a method which will do binary search in the left portion
+    // in insertion sort a pointer shall traverse through the array
+    // lets say the array is : |12,34,22,4,11,33,17,8
+                             /*   12|,34,22,4,11,33,17,8
+                                        12,34|,22,4,11,33,17,8
+                                        12,22,34|,4,11,33,17,8
+                                        4,12,22,34|,11,33,17,8*/
+                                       // and like the above picture the left part of the pointer will be sorted
+    //
 
 
-   // the insertionSort will discover the next element to be inserted in the sorted array
-    // that element will passed in the below method
-    // the method will understand which is the first index and last index in the sorted array
-    // by  outer for loop the first index will array's first index and last index is outerloop
-    // count-1(that means j-1)
-    //public static int[] binarySearchandInsertion(int[] sortedArray,int tobeInserted) {// the element will be inserted only when starting index=ending index
-        // and on the right or left of that index's element
+    // first step is making a method for implementing the inserting sort
+    static int[] insertionSort(int[] arraytobeSorted)
+    {
 
-      /*  while(startingIndex<=endingIndex)
+
+       //lets say the array is like this: 12|,34,22,4,11,33,17,8
+        // the pointer will compare the pointer element with the elements left of the pointer and place it in the
+        // array
+
+        // lets first create the outer loop which shall control the pointer
+        for(int outerCursor=1;outerCursor<arraytobeSorted.length;outerCursor++)//the cursor shall start from 1 index as
+            //the 0th index can't compared with anything
         {
-             if(tobeInserted<mid)
-             {      endingIndex=mid-1;}
-             else if(tobeInserted>mid)
-             {
-                 startingIndex=mid+1;
-             }
-             else if(startingIndex==endingIndex)
-             {
-                 if(array[mid]>tobeInserted)
-                 {  swap between tobeInserted and array[mid]}
-                 else{
+            //this cursor will only move when the pointer left side is sorted
 
-                     the tobeInserted number will remain at it's current position
-                         and the boundary of the insertion sort will move one step more
-                 }
+            for(int j=0;j<outerCursor;j++)
+            {
+                if(arraytobeSorted[outerCursor]<arraytobeSorted[j])
+                {
+                    // arraytobeSorted[outercursor] will be placed at index of arraytobeSorted[j] index and arraytobeSorted[j]
+                    // element shall shift to right untill the arraytobeSorted[outercursor] index
+                    //
+
+                }
 
 
-             }
 
-
+            }
 
         }
 
 
 
 
-    }*/
+  return arraytobeSorted;  }
+
+
+
+
+
+
+    {
+
+    }
 
 
 }

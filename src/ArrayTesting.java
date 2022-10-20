@@ -1,5 +1,5 @@
 import java.util.Arrays;
-
+// this program shall demonstrate properties of String array.
 public class ArrayTesting {
   static  String[]names;
   static int initialIndex=-1;
